@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="EasyDictation - Luyện nghe tiếng Anh dễ dàng với lộ trình cá nhân hóa. Chinh phục kỹ năng nghe hiểu tự nhiên chỉ sau 30 ngày.">
+  <title>EasyDictation — Luyện nghe tiếng Anh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎧</div>
+        EasyDictation
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Trang chủ</a>
+        <a href="lessons.html">Bài nghe</a>
+        <a href="categories.html">Chủ đề</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+          <input type="text" placeholder="Tìm kiếm bài học..." id="searchInput">
+        </div>
+        <button class="btn btn-ghost" id="loginBtn">Đăng nhập</button>
+        <button class="btn btn-primary" id="registerBtn">Đăng ký</button>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Chinh phục kỹ năng<br>nghe tiếng Anh<br><em>dễ dàng</em></h1>
+        <p class="hero-desc">Khám phá bài học được cá nhận hóa, giúp bạn nghe hiểu tự nhiên và tự tin giao tiếp sau mỗi
+          ngày luyện tập.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="startBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            Bắt đầu học ngay
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/hero.png" alt="Luyện nghe tiếng Anh với EasyDictation" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED LESSONS ===== -->
+  <section class="section" id="lessons">
+    <div class="container">
+      <div class="section-header">
+        <h2>Bài nghe nổi bật</h2>
+        <a href="lessons.html" class="view-all">
+          Xem tất cả
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="lessons-grid">
+        <!-- Card 1 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;"
+          id="lesson1">
+          <div class="card-image">
+            <img src="images/card-cafe.png" alt="Giao tiếp hàng ngày: Đi cafe" loading="lazy">
+            <div class="play-overlay">
+              <div class="play-btn">▶</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-beginner">Cơ bản</span>
+              <span class="duration">• 15 phút</span>
+            </div>
+            <h3>Giao tiếp hàng ngày: Đi cafe</h3>
+            <p>Học cách gọi món và giao tiếp tự nhiên với nhân viên phục vụ tại quán cafe.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;"
+          id="lesson2">
+          <div class="card-image">
+            <img src="images/card-news.png" alt="Tin tức BBC News: Công nghệ AI" loading="lazy">
+            <div class="play-overlay">
+              <div class="play-btn">▶</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-intermediate">Trung cấp</span>
+              <span class="duration">• 10 phút</span>
+            </div>
+            <h3>Tin tức BBC News: Công nghệ AI</h3>
+            <p>Cập nhật xu hướng công nghệ mới nhất qua bản tin BBC với tốc độ tự nhiên.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;"
+          id="lesson3">
+          <div class="card-image">
+            <img src="images/card-business.png" alt="Tiếng Anh Thương mại: Đàm phán" loading="lazy">
+            <div class="play-overlay">
+              <div class="play-btn">▶</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-advanced">Nâng cao</span>
+              <span class="duration">• 25 phút</span>
+            </div>
+            <h3>Tiếng Anh Thương mại: Đàm phán</h3>
+            <p>Nâng tầm kỹ năng nghe trong môi trường làm việc chuyên nghiệp quốc tế.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Chủ đề luyện nghe</h2>
+        <a href="categories.html" class="view-all">
+          Xem tất cả
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card" id="catDaily">
+          <div class="category-icon">💬</div>
+          <h3>Giao tiếp</h3>
+          <span>42 bài nghe</span>
+        </div>
+        <div class="category-card" id="catNews">
+          <div class="category-icon">📰</div>
+          <h3>Tin tức</h3>
+          <span>38 bài nghe</span>
+        </div>
+        <div class="category-card" id="catBusiness">
+          <div class="category-icon">💼</div>
+          <h3>Thương mại</h3>
+          <span>25 bài nghe</span>
+        </div>
+        <div class="category-card" id="catTravel">
+          <div class="category-icon">✈️</div>
+          <h3>Du lịch</h3>
+          <span>30 bài nghe</span>
+        </div>
+        <div class="category-card" id="catMovie">
+          <div class="category-icon">🎬</div>
+          <h3>Phim ảnh</h3>
+          <span>20 bài nghe</span>
+        </div>
+        <div class="category-card" id="catPodcast">
+          <div class="category-icon">🎙️</div>
+          <h3>Podcast</h3>
+          <span>35 bài nghe</span>
+        </div>
+        <div class="category-card" id="catAcademic">
+          <div class="category-icon">🎓</div>
+          <h3>Học thuật</h3>
+          <span>28 bài nghe</span>
+        </div>
+        <div class="category-card" id="catMusic">
+          <div class="category-icon">🎵</div>
+          <h3>Âm nhạc</h3>
+          <span>45 bài nghe</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-orb cta-orb-1"></div>
+        <div class="cta-orb cta-orb-2"></div>
+        <div class="cta-orb cta-orb-3"></div>
+        <div class="cta-content">
+          <h2>Bắt đầu hành trình<br>chinh phục tiếng Anh</h2>
+          <p>Hơn hàng trăm học viên đã tin tưởng sử dụng. Đăng ký để nhận bài học cá nhân hóa ngay hôm nay.</p>
+          <div class="cta-form" id="ctaForm">
+            <div class="cta-input-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              <input type="email" placeholder="Nhập email của bạn..." id="ctaEmail">
+            </div>
+            <button class="btn btn-primary btn-cta-submit" id="ctaBtn">
+              Đăng ký ngay
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+          </div>
+          <div class="cta-trust">
+            <div class="trust-avatars">
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #38bdf8, #3b82f6)">A</div>
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #34d399, #059669)">T</div>
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #fbbf24, #f59e0b)">M</div>
+              <div class="trust-avatar" style="background: linear-gradient(135deg, #f87171, #ef4444)">H</div>
+            </div>
+            <span>Đã có <strong>367+</strong> người tham gia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🎧</div>
+            EasyDictation
+          </a>
+          <p>Nền tảng luyện nghe tiếng Anh thông minh, giúp bạn nghe hiểu tự nhiên mọi lúc mọi nơi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <a href="lessons.html">Bài nghe</a>
+          <a href="#">Thi thử</a>
+          <a href="#">Bảng xếp hạng</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tài nguyên</h4>
+          <a href="#">Blog</a>
+          <a href="#">Mẹo học tập</a>
+          <a href="#">Từ điển</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Hỗ trợ</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Chính sách</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EasyDictation. All rights reserved.</span>
+        <span>Made with 💜 for English learners</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

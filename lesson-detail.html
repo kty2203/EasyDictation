@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luyện nghe tiếng Anh - Giao tiếp hàng ngày: Đi cafe">
+  <title>Giao tiếp hàng ngày: Đi cafe — EasyDictation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎧</div>
+        EasyDictation
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Trang chủ</a>
+        <a href="lessons.html" class="active">Bài nghe</a>
+        <a href="categories.html">Chủ đề</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+          <input type="text" placeholder="Tìm kiếm bài học..." id="searchInput">
+        </div>
+        <button class="btn btn-ghost" id="loginBtn">Đăng nhập</button>
+        <button class="btn btn-primary" id="registerBtn">Đăng ký</button>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ===== LESSON DETAIL ===== -->
+  <section class="lesson-detail-section">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></svg>
+        <a href="lessons.html">Bài nghe</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></svg>
+        <span style="color: var(--text-primary);">Giao tiếp hàng ngày: Đi cafe</span>
+      </div>
+
+      <div class="lesson-layout">
+        <!-- LEFT: Audio & Dictation -->
+        <div class="lesson-main">
+          
+          <div class="player-box">
+            <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 24px; text-align: left;">Giao tiếp hàng ngày: Đi cafe</h1>
+            
+            <div class="waveform">
+              <!-- Mock Waveform with SVG -->
+              <svg width="100%" height="40" preserveAspectRatio="none" viewBox="0 0 100 40">
+                <path d="M0 20 Q 5 5, 10 20 T 20 20 T 30 20 T 40 20 T 50 20 T 60 20 T 70 20 T 80 20 T 90 20 T 100 20" stroke="var(--accent)" stroke-width="2" fill="none" stroke-opacity="0.5"/>
+                <path d="M0 20 Q 2 10, 5 20 T 10 20 T 15 20 T 20 20 T 25 20 T 30 20 T 35 20 T 40 20 T 45 20 T 50 20 T 55 20 T 60 20 T 65 20 T 70 20 T 75 20 T 80 20 T 85 20 T 90 20 T 95 20 T 100 20" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            
+            <div class="player-controls">
+              <button class="ctrl-btn" title="Lùi 5s"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg></button>
+              <button class="ctrl-btn play" title="Phát"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+              <button class="ctrl-btn" title="Tới 5s"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+              
+              <select class="ctrl-speed">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1.0x</option>
+                <option value="1.25">1.25x</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="dictation-box">
+            <h3>Khu vực nhập liệu (Dictation) <span class="tag tag-beginner" style="text-transform:none;">Đoạn 1/5</span></h3>
+            <textarea class="dictation-area" placeholder="Gõ chính xác những gì bạn nghe được vào đây..."></textarea>
+            
+            <div style="display: flex; gap: 12px; justify-content: flex-end;">
+              <button class="btn btn-ghost">Gợi ý từ</button>
+              <button class="btn btn-primary">Kiểm tra đáp án</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Sidebar Info -->
+        <div class="lesson-sidebar">
+          <div class="sidebar-box">
+            <h2>Thông tin bài học</h2>
+            <div class="sidebar-meta">
+              <span class="tag tag-beginner">Cơ bản</span>
+              <span style="color: var(--text-secondary); font-size: 0.9rem;">⏳ 15 phút</span>
+              <span style="color: var(--text-secondary); font-size: 0.9rem;">🎧 5 đoạn</span>
+            </div>
+            
+            <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px;">Từ vựng chính</h4>
+            <ul class="vocab-list">
+              <li class="vocab-item"><span class="vocab-word">Americano</span> <span class="vocab-mean">Cà phê đen</span></li>
+              <li class="vocab-item"><span class="vocab-word">Take away</span> <span class="vocab-mean">Mang đi</span></li>
+              <li class="vocab-item"><span class="vocab-word">Receipt</span> <span class="vocab-mean">Biên lai</span></li>
+              <li class="vocab-item"><span class="vocab-word">Sugar-free</span> <span class="vocab-mean">Không đường</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h2 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              Transcript
+              <button class="btn btn-ghost" style="padding: 6px 12px; font-size: 0.8rem;">Hiện toàn bộ</button>
+            </h2>
+            <div class="transcript-preview">
+              <div class="transcript-blur">
+                <p><strong>Barista:</strong> Hi there! What can I get for you today?</p>
+                <p><strong>Customer:</strong> Hi! I'd like a medium iced Americano, please.</p>
+                <p><strong>Barista:</strong> Sure. Would you like room for milk or cream?</p>
+                <p><strong>Customer:</strong> No, just black is fine. And can I get that to go?</p>
+              </div>
+              <div class="transcript-overlay">
+                <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">Mở khóa Transcript</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🎧</div>
+            EasyDictation
+          </a>
+          <p>Nền tảng luyện nghe tiếng Anh thông minh, giúp bạn nghe hiểu tự nhiên mọi lúc mọi nơi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <a href="lessons.html">Bài nghe</a>
+          <a href="#">Thi thử</a>
+          <a href="#">Bảng xếp hạng</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tài nguyên</h4>
+          <a href="#">Blog</a>
+          <a href="#">Mẹo học tập</a>
+          <a href="#">Từ điển</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Hỗ trợ</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Chính sách</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EasyDictation. All rights reserved.</span>
+        <span>Made with 💜 for English learners</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

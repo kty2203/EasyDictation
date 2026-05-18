@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tất cả bài nghe tiếng Anh trên EasyDictation.">
+  <title>Tất cả bài nghe — EasyDictation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎧</div>
+        EasyDictation
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Trang chủ</a>
+        <a href="lessons.html" class="active">Bài nghe</a>
+        <a href="categories.html">Chủ đề</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+          <input type="text" placeholder="Tìm kiếm bài học..." id="searchInput">
+        </div>
+        <button class="btn btn-ghost" id="loginBtn">Đăng nhập</button>
+        <button class="btn btn-primary" id="registerBtn">Đăng ký</button>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header" style="padding: 160px 0 60px; text-align: center; border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 16px;">Tất cả bài nghe</h1>
+      <p style="color: var(--text-secondary); font-size: 1.15rem; max-width: 600px; margin: 0 auto;">Luyện tập kỹ năng nghe mỗi ngày với hàng trăm bài nghe phong phú đa dạng.</p>
+    </div>
+  </div>
+
+  <!-- ===== ALL LESSONS ===== -->
+  <section class="section" id="all-lessons">
+    <div class="container">
+      <div class="lessons-grid">
+        <!-- Card 1 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="images/card-cafe.png" alt="Giao tiếp hàng ngày: Đi cafe" loading="lazy">
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-beginner">Cơ bản</span>
+              <span class="duration">• 15 phút</span>
+            </div>
+            <h3>Giao tiếp hàng ngày: Đi cafe</h3>
+            <p>Học cách gọi món và giao tiếp tự nhiên với nhân viên phục vụ tại quán cafe.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="images/card-news.png" alt="Tin tức BBC News: Công nghệ AI" loading="lazy">
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-intermediate">Trung cấp</span>
+              <span class="duration">• 10 phút</span>
+            </div>
+            <h3>Tin tức BBC News: Công nghệ AI</h3>
+            <p>Cập nhật xu hướng công nghệ mới nhất qua bản tin BBC với tốc độ tự nhiên.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="images/card-business.png" alt="Tiếng Anh Thương mại: Đàm phán" loading="lazy">
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-advanced">Nâng cao</span>
+              <span class="duration">• 25 phút</span>
+            </div>
+            <h3>Tiếng Anh Thương mại: Đàm phán</h3>
+            <p>Nâng tầm kỹ năng nghe trong môi trường làm việc chuyên nghiệp quốc tế.</p>
+          </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="images/card-news.png" alt="Cuộc phỏng vấn xin việc" loading="lazy">
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-intermediate">Trung cấp</span>
+              <span class="duration">• 18 phút</span>
+            </div>
+            <h3>Phỏng vấn xin việc bằng tiếng Anh</h3>
+            <p>Luyện tập trả lời các câu hỏi phỏng vấn thường gặp và gây ấn tượng với nhà tuyển dụng.</p>
+          </div>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="images/card-cafe.png" alt="Đặt phòng khách sạn" loading="lazy">
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-beginner">Cơ bản</span>
+              <span class="duration">• 12 phút</span>
+            </div>
+            <h3>Cách đặt phòng khách sạn</h3>
+            <p>Từ vựng và mẫu câu cơ bản để giao tiếp tại quầy lễ tân khi đi du lịch nước ngoài.</p>
+          </div>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="lesson-card" onclick="window.location.href='lesson-detail.html'" style="cursor: pointer;">
+          <div class="card-image">
+            <img src="images/card-business.png" alt="TED Talk: Sức mạnh của ngôn từ" loading="lazy">
+            <div class="play-overlay"><div class="play-btn">▶</div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-advanced">Nâng cao</span>
+              <span class="duration">• 30 phút</span>
+            </div>
+            <h3>TED Talk: Sức mạnh của ngôn từ</h3>
+            <p>Bài diễn thuyết truyền cảm hứng từ chuyên gia hàng đầu trên sân khấu TED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🎧</div>
+            EasyDictation
+          </a>
+          <p>Nền tảng luyện nghe tiếng Anh thông minh, giúp bạn nghe hiểu tự nhiên mọi lúc mọi nơi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <a href="lessons.html">Bài nghe</a>
+          <a href="#">Thi thử</a>
+          <a href="#">Bảng xếp hạng</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tài nguyên</h4>
+          <a href="#">Blog</a>
+          <a href="#">Mẹo học tập</a>
+          <a href="#">Từ điển</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Hỗ trợ</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Chính sách</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EasyDictation. All rights reserved.</span>
+        <span>Made with 💜 for English learners</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
